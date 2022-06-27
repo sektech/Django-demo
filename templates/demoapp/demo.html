@@ -1,0 +1,17 @@
+<html>
+
+    {% load static %}
+  <head>
+
+    <title>This is my first demo projecct</title>
+    <link rel="stylesheet" href="{% static '/css/style1.css' %}">
+  </head>
+  <body>
+    <h1>This is my first html page</h1>
+    <div>
+       Today's Date : {{display_date}} My name : {{emp_name}}
+    </div>
+
+    <img src="{% static '/image/Image1.jpg' %}" alt="My image" />
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+    {% load static %}
+  <head>
+
+    <title>This is my first demo projecct</title>
+    <link rel="stylesheet" href="{% static '/css/style1.css' %}">
+  </head>
+  <body>
+    <h1>This is my first html page</h1>
+    <div>
+       Today's Date : {{display_date}} My name : {{emp_name}}
+    </div>
+    <div>
+      {% if emp_list %}
+      <table>
+        <tr><td>First Name</td> <td>Last Name</td></tr>
+
+      {% for emp in emp_list %}
+        <tr>
+
+
+       <td> {{emp.first_name}}</td>
+        <td>{{emp.last_name}}</td>
+
+          </tr>
+      {% endfor %}
+         </table>
+      {% endif %}
+
+    </div>
+
+  </body>
+</html>
